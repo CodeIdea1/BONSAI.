@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="landing" style="background: none;">
+        <header class="header" style="background-color: #E8BC0E;">
+            <div class="container">
+                <div class="logo">
+                    <img class="logo-img" src="image/logo.png" alt="">
+                </div>
+                <ul class="ul">
+                    <li>
+                        <a href="index.html#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="index.html#features">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="index.html#products">OUR PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">CONTACTS</a>
+                    </li>
+                </ul>
+
+                <!--                 .search input.background {
+                    background-color: white;
+                    color: #1e3117;
+                }
+                .search .icon.background {
+                    color: #1e3117;
+                } -->
+                <div class="search">
+                    <div class="icon">
+                        <i style="color: #1e3117;" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input  style="background-color: white; color: #1e3117;" type="search" value="search">
+                </div>
+                <div class="menu">
+                    <div class="menu-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="mobile-ul">
+                        <div class="x">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                        <li>
+                            <a class="a" href="index.html#home">HOME</a>
+                        </li>
+                        <li>
+                            <a class="a" href="index.html#features">FEATURES</a>
+                        </li>
+                        <li>
+                            <a class="a" href="index.html#products">OUR PRODUCTS</a>
+                        </li>
+                        <li>
+                            <a class="a" href="index.html#contact">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container product-container">
+            <div class="product-details">
+                <div class="img-container">
+                    <img class="product-image" id="product-image" alt="">
+                </div>
+                <div class="details-container">
+                    <h2 class="product-name" id="product-name"></h2>
+                    <h1 class="product-description" id="product-description"></h1>
+                    <div class="price product-price" id="product-price"></div>
+                    <p class="stars" id="product-ratings"></p>
+                </div>
+            </div>
+            <div class="cartTab">
+                <h1>Shopping Cart</h1>
+                <div class="listCart">
+                    
+                </div>
+                <div class="btn">
+                    <button class="close">CLOSE</button>
+                    <button class="checkOut">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    
+            
+<script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+    // جلب المنتج المحدد من localStorage
+    let product = JSON.parse(localStorage.getItem('selectedProduct'));
+    
+    // عرض بيانات المنتج في الصفحة
+    document.querySelector('.product-name').innerText = product.name;
+    document.querySelector('.product-description').innerText = product.description;
+    document.querySelector('.product-price').innerText = `$${product.price}`;
+    document.querySelector('.product-image').src = product.image;
+    document.querySelector('.stars').innerHTML = getStars(product.ratings);
+    
+    })
+
+</script>
+
+
+</body>
+</html>

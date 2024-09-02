@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Bonsai",
+        "description": "Fiddle Fig Potted Plant 100cm",
+        "price": "69",
+        "image": "image/prod1.jpg",
+        "ratings": 5
+    },
+    {
+        "id": 2,
+        "name": "Bonsai",
+        "description": "Asparagus Fern",
+        "price": "27",
+        "image": "image/prod2.jpg",
+        "ratings": 4.0
+    },
+    {
+        "id": 3,
+        "name": "Bonsai",
+        "description": "Rubber Fig Potted Plant 65cm",
+        "price": "34",
+        "image": "image/prod3.jpg",
+        "ratings": 2.8
+    },
+    {
+        "id": 4,
+        "name": "Bonsai",
+        "description": "Potted Coin Green Plant",
+        "price": "20",
+        "image": "image/prod4.jpg",
+        "ratings": 5
+    },        {
+        "id": 5,
+        "name": "Bonsai",
+        "description": "Bird Nest Fern 55cm Potted Plant",
+        "price": "41",
+        "image": "image/prod5.jpg",
+        "ratings": 3.5
+    },
+    {
+        "id": 6,
+        "name": "Bonsai",
+        "description": "Silver Green Hanging Boston Fern",
+        "price": "55",
+        "image": "image/prod6.jpg",
+        "ratings": 4.0
+    },
+    {
+        "id": 7,
+        "name": "Bonsai",
+        "description": "Olea Potted Green Gum Leaves",
+        "price": "41",
+        "image": "image/prod7.jpg",
+        "ratings": 3.8
+    },
+    {
+        "id": 8,
+        "name": "Bonsai",
+        "description": "Green Cheese Monstera",
+        "price": "27",
+        "image": "image/prod8.jpg",
+        "ratings": 5
+    },
+    {
+        "id": 9,
+        "name": "Bonsai",
+        "description": "Green & White Olive Stem In Vase",
+        "price": "90",
+        "image": "image/prod9.jpg",
+        "ratings": 4
+    },
+    {
+        "id": 10,
+        "name": "Bonsai",
+        "description": "Fiddle Fig Potted Plant 190cm",
+        "price": "230",
+        "image": "image/prod10.jpg",
+        "ratings": 5
+    },
+    {
+        "id": 11,
+        "name": "Bonsai",
+        "description": "Fiddle Fig Potted Plant 100cm",
+        "price": "69",
+        "image": "image/prod11.jpg",
+        "ratings": 3.8
+    },
+    {
+        "id": 12,
+        "name": "Bonsai",
+        "description": "Monstera Potted Plant 120cm",
+        "price": "90",
+        "image": "image/prod12.jpg",
+        "ratings": 2.8
+    }
+]
+
